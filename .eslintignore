@@ -1,5 +1,6 @@
 node_modules/
 dist/
+.vscode/
 .eslintrc.js
 babel.config.json
 webpack.*.js
