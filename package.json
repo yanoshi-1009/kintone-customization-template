@@ -1,5 +1,5 @@
 {
-  "name": "kintone-custmization",
+  "name": "kintone-customization",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,8 @@
   "keywords": [],
   "repository": {},
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "description": "This is my kintone customization template.",
   "browserslist": [
     "last 1 ie version",
     "last 1 Edge version",
@@ -19,7 +20,6 @@
     "last 2 iOS versions",
     "last 1 ChromeAndroid version"
   ],
-  "description": "",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
@@ -43,8 +43,12 @@
     "@kintone/rest-api-client": "^1.0.0",
     "core-js": "^3.6.4",
     "cross-env": "^7.0.2",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "regenerator-runtime": "^0.13.3"
+    "regenerator-runtime": "^0.13.5",
+    "sweetalert2": "^9.10.2"
   }
 }
