@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base", "schedule:earlySaturdays"],
+  "extends": ["config:base"],
   "timezone": "Asia/Tokyo",
   "packageRules": [
     {
@@ -7,5 +7,6 @@
       "groupName": "non-major",
       "automerge": true
     }
-  ]
+  ],
+  "schedule": "before 3am on Saturday"
 }
