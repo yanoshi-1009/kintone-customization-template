@@ -4,7 +4,7 @@
   ],
   "minor": {
     "groupName": "all dependencies"
-  }
+  },
   "packageRules": [
     {
       "updateTypes": ["minor", "patch", "pin", "digest"],
