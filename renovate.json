@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base", "schedule:earlyMondays"],
+  "extends": ["config:base", "schedule:earlySaturdays"],
   "timezone": "Asia/Tokyo",
   "packageRules": [
     {
