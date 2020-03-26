@@ -1,7 +1,4 @@
+.vscode/
 node_modules/
 dist/
-.vscode/
-.eslintrc.js
-babel.config.json
-prettier.config.js
-webpack.config.js
+/*.js
