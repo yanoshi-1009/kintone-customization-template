@@ -11,15 +11,6 @@
   "author": "",
   "license": "MIT",
   "description": "This is my kintone customization template.",
-  "browserslist": [
-    "last 1 ie version",
-    "last 1 Edge version",
-    "last 1 Chrome version",
-    "last 1 Firefox version",
-    "last 1 safari version",
-    "last 2 iOS versions",
-    "last 1 ChromeAndroid version"
-  ],
   "devDependencies": {
     "@babel/cli": "7.8.4",
     "@babel/core": "7.9.0",
