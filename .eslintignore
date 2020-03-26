@@ -3,4 +3,5 @@ dist/
 .vscode/
 .eslintrc.js
 babel.config.json
-webpack.*.js
+prettier.config.js
+webpack.config.js

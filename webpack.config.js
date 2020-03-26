@@ -1,7 +1,7 @@
 const path = require('path');
 module.exports = {
   mode: 'development', // productionにしたい場合はコマンドラインで上書き可能
-  entry: { main: './src/js/index.js' },
+  entry: {main: './src/js/index.js'},
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name]_bundle.js'
