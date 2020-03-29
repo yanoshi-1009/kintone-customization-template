@@ -3,7 +3,7 @@
     "config:base",
     ":automergeMinor",
     ":maintainLockFilesMonthly"
-     "timezone": "Asia/Tokyo"
   ],
+  "timezone": "Asia/Tokyo",
   "schedule": "before 2am"
 }
