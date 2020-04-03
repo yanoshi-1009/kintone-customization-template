@@ -1,4 +1,3 @@
-// reference: https://webpack.js.org/concepts/configuration/#simple-configuration
 const path = require('path');
 module.exports = {
   mode: 'development', // productionにしたい場合はコマンドラインで上書き可能
