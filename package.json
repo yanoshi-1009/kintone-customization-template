@@ -32,14 +32,14 @@
   "dependencies": {
     "@kintone/kintone-ui-component": "^0.7.0",
     "@kintone/rest-api-client": "^1.1.0",
-    "core-js": "^3.6.4",
+    "core-js": "^3.6.5",
     "cross-env": "^7.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "regenerator-runtime": "^0.13.5",
-    "sweetalert2": "^9.10.9"
+    "sweetalert2": "^9.10.10"
   }
 }
