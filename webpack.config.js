@@ -1,7 +1,7 @@
 const path = require('path');
 module.exports = {
   mode: 'development', // productionにしたい場合はコマンドラインで上書き可能
-  entry: {main: './src/js/index.js'},
+  entry: {index: './src/js/index.js'},
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name]_bundle.js'
@@ -17,20 +17,11 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
+        use: ['babel-loader']
       },
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {url: false}
-          },
-          'sass-loader'
-        ]
+        use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
         test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/i,
