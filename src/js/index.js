@@ -1,4 +1,5 @@
+import '../style/style.scss';
+
 (() => {
   'use strict';
-  console.log('hello');
 })();
