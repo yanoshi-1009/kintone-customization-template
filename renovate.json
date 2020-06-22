@@ -1,18 +1,9 @@
 {
-  "extends": [
-    ":automergeMinor",
-    ":maintainLockFilesMonthly",
-    ":separateMajorReleases",
-    ":combinePatchMinorReleases",
-    ":ignoreUnstable",
-    ":semanticPrefixFixDepsChoreOthers",
-    ":updateNotScheduled",
-    ":ignoreModulesAndTests",
-    ":autodetectPinVersions",
-    "group:monorepos",
-    "group:recommended",
-    "helpers:disableTypesNodeMajor"
-  ],
-  "timezone": "Asia/Tokyo",
-  "schedule": "before 2am"
+  "extends": ["config:base", ":maintainLockFilesWeekly"],
+  "packageRules": [
+    {
+      "depTypeList": ["devDependencies", "dependencies"],
+      "extends": [":automergeMinor"]
+    }
+  ]
 }
