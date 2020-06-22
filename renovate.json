@@ -2,7 +2,7 @@
   "extends": ["config:base", ":maintainLockFilesWeekly"],
   "timezone": "Asia/Tokyo",
   "schedule": "before 2am",
-  "labels": "renovate",
+  "labels": ["renovate"],
   "patch": { "automerge": true },
   "packageRules": [
     {
