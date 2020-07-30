@@ -2,5 +2,5 @@
   "extends": ["config:base", ":maintainLockFilesWeekly", ":automergeMinor"],
   "timezone": "Asia/Tokyo",
   "schedule": "before 2am",
-  "labels": ["renovate"],
+  "labels": ["renovate"]
 }
