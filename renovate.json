@@ -5,6 +5,7 @@
     ":maintainLockFilesWeekly",
     ":automergeMinor"
   ],
+  "enabledManagers": ["npm"],
   "timezone": "Asia/Tokyo",
   "schedule": "before 2am",
   "labels": ["renovate"],
