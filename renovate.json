@@ -3,7 +3,7 @@
     "config:base",
     ":pinAllExceptPeerDependencies",
     ":maintainLockFilesWeekly",
-    ":automergeMinor"
+    ":automergeMinor",
     ":skipStatusChecks"
   ],
   "timezone": "Asia/Tokyo",
