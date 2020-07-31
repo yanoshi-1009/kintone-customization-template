@@ -4,6 +4,7 @@
     ":pinAllExceptPeerDependencies",
     ":maintainLockFilesWeekly",
     ":automergeMinor"
+    ":skipStatusChecks"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": "before 2am",
