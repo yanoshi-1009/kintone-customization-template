@@ -1,12 +1,6 @@
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-  .BundleAnalyzerPlugin;
 module.exports = {
   mode: 'development', // productionにしたい場合はコマンドラインで上書き可能
   entry: {index: './src/js/index.js'},
-  output: {
-    path: __dirname + '/dist',
-    filename: '[name]_bundle.js'
-  },
   resolve: {
     alias: {
       modules: __dirname + '/node_modules',
@@ -37,6 +31,5 @@ module.exports = {
         type: 'asset'
       }
     ]
-  },
-  plugins: [new BundleAnalyzerPlugin()]
+  }
 };
