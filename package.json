@@ -17,7 +17,7 @@
     "@babel/preset-env": "7.12.1",
     "@babel/preset-react": "7.12.5",
     "@babel/preset-typescript": "7.12.1",
-    "@cybozu/eslint-config": "11.0.1",
+    "@cybozu/eslint-config": "11.0.2",
     "babel-loader": "8.1.0",
     "css-loader": "5.0.1",
     "eslint": "7.13.0",
