@@ -20,7 +20,7 @@
     "@cybozu/eslint-config": "11.0.2",
     "babel-loader": "8.2.1",
     "css-loader": "5.0.1",
-    "eslint": "7.13.0",
+    "eslint": "7.14.0",
     "eslint-loader": "4.0.2",
     "node-sass": "5.0.0",
     "prettier": "2.2.0",
