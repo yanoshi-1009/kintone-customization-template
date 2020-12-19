@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build:prod": "webpack --mode production",
-    "build:dev": "webpack --devtool eval-source-map --output-pathinfo -w"
+    "build:dev": "webpack --devtool eval-source-map --watch"
   },
   "keywords": [],
   "repository": {},
