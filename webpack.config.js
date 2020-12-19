@@ -1,5 +1,4 @@
-module.exports = {
-  mode: 'development', // productionにしたい場合はコマンドラインで上書き可能
+module.exports = ( env, argv ) =>({
   entry: {index: './src/js/index.js'},
   resolve: {
     alias: {
@@ -31,4 +30,4 @@ module.exports = {
       }
     ]
   }
-};
+});
