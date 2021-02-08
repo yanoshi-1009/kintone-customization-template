@@ -19,7 +19,7 @@
     "@babel/preset-typescript": "7.12.13",
     "@cybozu/eslint-config": "11.0.3",
     "babel-loader": "8.2.2",
-    "css-loader": "5.0.1",
+    "css-loader": "5.0.2",
     "eslint": "7.19.0",
     "eslint-loader": "4.0.2",
     "node-sass": "5.0.0",
