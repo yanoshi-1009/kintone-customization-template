@@ -1,5 +1,5 @@
 module.exports = (env, argv) => ({
-  entry: {index: "./src/js/index.js"},
+  entry: { index: "./src/js/index.js" },
   resolve: {
     alias: {
       modules: __dirname + "/node_modules",
@@ -19,7 +19,7 @@ module.exports = (env, argv) => ({
           "style-loader",
           {
             loader: "css-loader",
-            options: {url: false},
+            options: { url: false },
           },
           "sass-loader",
         ],
