@@ -1,33 +1,33 @@
-module.exports = ( env, argv ) =>({
-  entry: {index: './src/js/index.js'},
+module.exports = (env, argv) => ({
+  entry: {index: "./src/js/index.js"},
   resolve: {
     alias: {
-      modules: __dirname + '/node_modules',
-      common: __dirname + '/common'
-    }
+      modules: __dirname + "/node_modules",
+      common: __dirname + "/common",
+    },
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: ["babel-loader"],
       },
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          'style-loader',
+          "style-loader",
           {
-            loader: 'css-loader',
-            options: {url: false}
+            loader: "css-loader",
+            options: {url: false},
           },
-          'sass-loader'
-        ]
+          "sass-loader",
+        ],
       },
       {
         test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/i,
-        type: 'asset'
-      }
-    ]
-  }
+        type: "asset",
+      },
+    ],
+  },
 });
