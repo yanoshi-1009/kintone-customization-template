@@ -1,4 +1,4 @@
-module.exports = (env, argv) => ({
+module.exports = {
   entry: { index: "./src/js/index.js" },
   resolve: {
     alias: {
@@ -30,4 +30,4 @@ module.exports = (env, argv) => ({
       }
     ]
   }
-});
+};
