@@ -24,7 +24,7 @@
     "@babel/preset-typescript": "7.13.0",
     "@cybozu/eslint-config": "14.0.0",
     "babel-loader": "8.2.2",
-    "css-loader": "5.2.5",
+    "css-loader": "5.2.6",
     "eslint": "7.27.0",
     "node-sass": "6.0.0",
     "prettier": "2.3.0",
