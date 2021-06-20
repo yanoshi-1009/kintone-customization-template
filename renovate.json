@@ -9,7 +9,7 @@
   "timezone": "Asia/Tokyo",
   "schedule": "before 2am",
   "labels": ["renovate"],
-  "assigneesFromCodeOwners": true
+  "assigneesFromCodeOwners": true,
   "lockFileMaintenance": {
     "automerge": true
   },
