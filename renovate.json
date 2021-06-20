@@ -13,6 +13,7 @@
   "lockFileMaintenance": {
     "automerge": true
   },
+  "rangeStrategy": "bump",
   "packageRules": [
     {
       "matchPackagePatterns": ["@cybozu/eslint-config"],
