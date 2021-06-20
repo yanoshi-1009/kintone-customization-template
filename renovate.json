@@ -7,7 +7,7 @@
     ":skipStatusChecks"
   ],
   "timezone": "Asia/Tokyo",
-  "schedule": "before 2am",
+  "schedule": "before 3am",
   "labels": ["renovate"],
   "assigneesFromCodeOwners": true,
   "rangeStrategy": "bump",
