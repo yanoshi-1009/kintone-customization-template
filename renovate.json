@@ -10,10 +10,10 @@
   "schedule": "before 2am",
   "labels": ["renovate"],
   "assigneesFromCodeOwners": true,
+  "rangeStrategy": "bump",
   "lockFileMaintenance": {
     "automerge": true
   },
-  "rangeStrategy": "bump",
   "packageRules": [
     {
       "matchPackagePatterns": ["@cybozu/eslint-config"],
