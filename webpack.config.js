@@ -1,3 +1,5 @@
+const TerserPlugin = require("terser-webpack-plugin");
+
 module.exports = {
   entry: { index: "./src/js/index.js" },
   resolve: {
@@ -28,6 +30,13 @@ module.exports = {
         test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/i,
         type: "asset"
       }
+    ]
+  },
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        extractComments: false
+      })
     ]
   }
 };
