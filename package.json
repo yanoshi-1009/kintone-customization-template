@@ -41,7 +41,7 @@
     "core-js": "^3.17.3",
     "dayjs": "^1.10.6",
     "jquery": "^3.6.0",
-    "kintone-ui-component": "^1.0.5",
+    "kintone-ui-component": "^1.1.0",
     "regenerator-runtime": "^0.13.9",
     "sweetalert2": "^11.1.5"
   }
