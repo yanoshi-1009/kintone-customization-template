@@ -39,7 +39,7 @@
     "@kintone/rest-api-client": "^2.0.18",
     "axios": "^0.21.4",
     "core-js": "^3.17.3",
-    "dayjs": "^1.10.6",
+    "dayjs": "^1.10.7",
     "jquery": "^3.6.0",
     "kintone-ui-component": "^1.1.0",
     "regenerator-runtime": "^0.13.9",
