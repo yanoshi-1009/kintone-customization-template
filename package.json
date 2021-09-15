@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@kintone/kintone-ui-component": "^0.8.1",
-    "@kintone/rest-api-client": "^2.0.18",
+    "@kintone/rest-api-client": "^2.0.19",
     "axios": "^0.21.4",
     "core-js": "^3.17.3",
     "dayjs": "^1.10.7",
