@@ -43,6 +43,6 @@
     "jquery": "^3.6.0",
     "kintone-ui-component": "^1.1.0",
     "regenerator-runtime": "^0.13.9",
-    "sweetalert2": "^11.1.6"
+    "sweetalert2": "^11.1.7"
   }
 }
