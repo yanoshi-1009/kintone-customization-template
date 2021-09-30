@@ -3,7 +3,8 @@
     "config:base",
     ":automergeMinor",
     ":maintainLockFilesWeekly",
-    ":skipStatusChecks"
+    ":skipStatusChecks",
+    ":disableDependencyDashboard"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": "before 3am",
