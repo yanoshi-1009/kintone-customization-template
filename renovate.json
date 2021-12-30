@@ -16,12 +16,12 @@
   },
   "packageRules": [
     {
-      "matchPackagePatterns": ["@cybozu/eslint-config"],
+      "matchPackageNames": ["@cybozu/eslint-config"],
       "automerge": true
     },
     {
-      "matchPackagePatterns": ["core-js"],
-      "extend": [":automergePatch"]
+      "matchPackageNames": ["core-js"],
+      "extends": [":automergePatch"]
     }
   ]
 }
