@@ -8,9 +8,7 @@ module.exports = function (api) {
         useBuiltIns: "usage",
         corejs: "3.20"
       }
-    ],
-    "@babel/preset-react",
-    "@babel/preset-typescript"
+    ]
   ];
   const plugins = [];
 
