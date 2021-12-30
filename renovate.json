@@ -18,6 +18,10 @@
     {
       "matchPackagePatterns": ["@cybozu/eslint-config"],
       "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["core-js"],
+      "extend": [":automergeMinor"]
     }
   ]
 }
