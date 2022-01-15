@@ -36,7 +36,7 @@
     "@kintone/kintone-ui-component": "^0.9.0",
     "@kintone/rest-api-client": "^2.0.32",
     "axios": "^0.24.0",
-    "core-js": "^3.20.2",
+    "core-js": "^3.20.3",
     "dayjs": "^1.10.7",
     "jquery": "^3.6.0",
     "kintone-ui-component": "^1.2.0",
