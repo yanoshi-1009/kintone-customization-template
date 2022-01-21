@@ -20,7 +20,7 @@
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.10",
     "@babel/preset-env": "^7.16.11",
-    "@cybozu/eslint-config": "^16.0.1",
+    "@cybozu/eslint-config": "^17.0.0",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "eslint": "^8.7.0",
