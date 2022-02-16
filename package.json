@@ -18,7 +18,7 @@
   "description": "This is my kintone customization template.",
   "devDependencies": {
     "@babel/cli": "^7.17.3",
-    "@babel/core": "^7.17.3",
+    "@babel/core": "^7.17.4",
     "@babel/preset-env": "^7.16.11",
     "@cybozu/eslint-config": "^17.0.0",
     "babel-loader": "^8.2.3",
