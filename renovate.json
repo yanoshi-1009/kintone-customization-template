@@ -21,7 +21,9 @@
     },
     {
       "matchPackageNames": ["core-js"],
-      "extends": [":automergePatch"]
+      "minor": {
+        "automerge": false
+      }
     }
   ]
 }
