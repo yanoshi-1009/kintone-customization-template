@@ -23,7 +23,7 @@
     "@cybozu/eslint-config": "^17.0.1",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.7.1",
-    "eslint": "^8.10.0",
+    "eslint": "^8.11.0",
     "prettier": "^2.5.1",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
