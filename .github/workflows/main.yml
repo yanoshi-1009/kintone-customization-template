@@ -12,5 +12,5 @@ jobs:
     steps:
       - name: update-babel-setting
         run: |
-          VAR1=123456,
-          echo ${VAR1}
+          core-js-version=`cat package.json|grep "core-js"|awk '{print match($0, /3\.[0-9]{1,2}/); print substr($0, RSTART, RLENGTH)}'`
+          echo ${core-js-version}
