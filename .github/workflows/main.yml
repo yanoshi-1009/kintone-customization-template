@@ -1,0 +1,17 @@
+name: "use up-to-date core-js"
+
+on:
+  label:
+    types: [renovate]
+
+  workflow_dispatch:
+
+jobs:
+  update-babel-setting:
+    runs-on: ubuntu-latest
+    steps:
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
