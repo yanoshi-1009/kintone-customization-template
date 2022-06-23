@@ -18,6 +18,10 @@
     {
       "matchPackageNames": ["@cybozu/eslint-config"],
       "automerge": true
+    },
+     {
+      "matchPackageNames": ["core-js"],
+      "ignoreTests": false
     }
   ]
 }
