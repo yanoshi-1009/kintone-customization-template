@@ -42,6 +42,6 @@
     "dayjs": "^1.11.3",
     "kintone-ui-component": "^1.3.2",
     "regenerator-runtime": "^0.13.9",
-    "sweetalert2": "^11.4.22"
+    "sweetalert2": "^11.4.23"
   }
 }
