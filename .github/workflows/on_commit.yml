@@ -1,9 +1,6 @@
-name: check-npm-install
+name: on commit
 on:
-  pull_request:
-    branches:
-      - "main"
-      - "master"
+  push:
   workflow_dispatch:
   
 jobs:
