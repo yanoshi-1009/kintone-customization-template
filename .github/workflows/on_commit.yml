@@ -1,8 +1,8 @@
-name: on commit
+name: On commit
 on:
   push:
   workflow_dispatch:
   
 jobs:
   call-check-npm-install:
-    uses: yanoshi-1009/github-actions/.github/workflows/check-npm-install.yml@main
+    uses: yanoshi-1009/github-actions/.github/workflows/on_commit.yml@main
