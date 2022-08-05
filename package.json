@@ -40,7 +40,7 @@
     "axios": "^0.27.2",
     "core-js": "^3.24.1",
     "dayjs": "^1.11.4",
-    "kintone-ui-component": "^1.3.2",
+    "kintone-ui-component": "^1.4.0",
     "regenerator-runtime": "^0.13.9",
     "sweetalert2": "^11.4.24"
   }
