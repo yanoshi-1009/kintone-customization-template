@@ -1,16 +1,17 @@
 module.exports = function (api) {
   api.cache(true);
 
-  const presets = [
+  const presets = [["@babel/preset-env"]];
+  const plugins = [
+    ["@babel/plugin-transform-runtime", { version: "7.20.0" }],
     [
-      "@babel/preset-env",
+      "polyfill-corejs3",
       {
-        useBuiltIns: "usage",
-        corejs: "3.26"
+        method: "usage-pure",
+        version: "3.26.0"
       }
     ]
   ];
-  const plugins = [];
 
   return {
     presets,
