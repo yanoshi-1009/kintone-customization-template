@@ -8,7 +8,7 @@ module.exports = function (api) {
       "polyfill-corejs3",
       {
         method: "usage-pure",
-        version: "3.26.0"
+        version: "3.26"
       }
     ]
   ];
