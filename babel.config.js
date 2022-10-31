@@ -1,16 +1,26 @@
+const packageJson = require("./package.json");
+
 module.exports = function (api) {
   api.cache(true);
 
-  const presets = [
+  const presets = [["@babel/preset-env"]];
+  const plugins = [
     [
-      "@babel/preset-env",
+      "@babel/plugin-transform-runtime",
       {
-        useBuiltIns: "usage",
-        corejs: "3.26"
+        version: packageJson.dependencies["@babel/runtime"].replace(/^\^/g, "")
+      }
+    ],
+    [
+      "polyfill-corejs3",
+      {
+        method: "usage-pure",
+        version: packageJson.dependencies["core-js-pure"]
+          .replace(/^\^/g, "")
+          .replace(/.[0-9]+$/g, "")
       }
     ]
   ];
-  const plugins = [];
 
   return {
     presets,
