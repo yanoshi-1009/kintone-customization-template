@@ -3,7 +3,7 @@ const packageJson = require("./package.json");
 module.exports = function (api) {
   api.cache(true);
 
-  const presets = [["@babel/preset-env"]];
+  const presets = ["@babel/preset-env"];
   const plugins = [
     [
       "@babel/plugin-transform-runtime",
