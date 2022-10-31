@@ -2,8 +2,7 @@
   "extends": [
     "config:base",
     ":automergeMinor",
-    ":maintainLockFilesWeekly",
-    ":disableDependencyDashboard"
+    ":maintainLockFilesWeekly"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": "before 3am",
