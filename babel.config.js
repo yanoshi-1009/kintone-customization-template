@@ -8,7 +8,7 @@ module.exports = function (api) {
     [
       "@babel/plugin-transform-runtime",
       {
-        version: packageJson.dependencies["@babel/runtime"].replace("^", "")
+        version: packageJson.dependencies["@babel/runtime"].replace(/^\^/g, "")
       }
     ],
     [
