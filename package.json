@@ -26,7 +26,7 @@
     "@babel/preset-env": "^7.26.0",
     "@cybozu/eslint-config": "^24.0.0-beta.2",
     "babel-loader": "^9.2.1",
-    "babel-plugin-polyfill-corejs3": "^0.11.0",
+    "babel-plugin-polyfill-corejs3": "^0.11.1",
     "css-loader": "^7.1.2",
     "eslint": "^9.18.0",
     "prettier": "^3.4.2",
