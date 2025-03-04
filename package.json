@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build:prod": "webpack --mode=production",
-    "build:dev": "webpack --mode=development --devtool=eval-source-map --watch"
+    "build:dev": "esbuild src/js/index.js --bundle --sourcemap=inline --outdir=dist  --watch"
   },
   "keywords": [
     "kintone"
@@ -28,6 +28,7 @@
     "babel-loader": "^10.0.0",
     "babel-plugin-polyfill-corejs3": "^0.11.1",
     "css-loader": "^7.1.2",
+    "esbuild": "^0.25.0",
     "eslint": "^9.21.0",
     "prettier": "^3.5.3",
     "sass": "^1.85.1",
