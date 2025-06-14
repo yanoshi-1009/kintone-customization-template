@@ -25,10 +25,6 @@ module.exports = {
             }
           }
         ]
-      },
-      {
-        test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/i,
-        type: "asset"
       }
     ]
   },
