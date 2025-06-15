@@ -1,5 +1,4 @@
+"use strict";
 // import "../style/style.scss";
 
-(() => {
-  "use strict";
-})();
+(() => {})();
