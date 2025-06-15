@@ -18,7 +18,7 @@ You can easily build, bundle, and serve your JavaScript/CSS for kintone customiz
 Before starting development, you need to generate a self-signed SSL certificate for local HTTPS server:
 
 ```sh
-openssl req -x509 -newkey rsa:4096 -keyout .cert/private.key -out .cert/private.cert -days 9999 -nodes -subj /CN=127.0.0.1
+mkdir .cert && openssl req -x509 -newkey rsa:4096 -keyout .cert/private.key -out .cert/private.cert -days 9999 -nodes -subj /CN=127.0.0.1
 ```
 
 This will create `.cert/private.key` and `.cert/private.cert` for local HTTPS.
@@ -99,7 +99,7 @@ JavaScript/CSS のビルド・バンドル・サーブを簡単に行えます�
 開発を始める前に、ローカルHTTPSサーバー用の自己署名証明書を作成してください：
 
 ```sh
-openssl req -x509 -newkey rsa:4096 -keyout .cert/private.key -out .cert/private.cert -days 9999 -nodes -subj /CN=127.0.0.1
+mkdir .cert && openssl req -x509 -newkey rsa:4096 -keyout .cert/private.key -out .cert/private.cert -days 9999 -nodes -subj /CN=127.0.0.1
 ```
 
 これにより `.cert/private.key` と `.cert/private.cert` が作成されます。

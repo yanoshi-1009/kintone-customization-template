@@ -1,5 +1,5 @@
 .DS_Store
 .vscode/
-.cert/*
+.cert/
 node_modules/
 dist/
