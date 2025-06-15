@@ -27,6 +27,8 @@ This will create `.cert/private.key` and `.cert/private.cert` for local HTTPS.
 
 ```sh
 npm install
+
+npx kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <password> --app-id <appId> --type-name <appName> -o "./src/js/fields.d.ts"
 ```
 
 ### Usage
@@ -108,6 +110,8 @@ mkdir .cert && openssl req -x509 -newkey rsa:4096 -keyout .cert/private.key -out
 
 ```sh
 npm install
+
+npx kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <password> --app-id <appId> --type-name <appName> -o "./src/js/fields.d.ts"
 ```
 
 ### 使い方
