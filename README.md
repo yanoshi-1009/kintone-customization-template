@@ -11,6 +11,17 @@ You can easily build, bundle, and serve your JavaScript/CSS for kintone customiz
 
 - Node.js (v18 or later recommended)
 - npm or yarn
+- **OpenSSL** (for generating a local development certificate)
+
+### Initial Setup
+
+Before starting development, you need to generate a self-signed SSL certificate for local HTTPS server:
+
+```sh
+openssl req -x509 -newkey rsa:4096 -keyout .cert/private.key -out .cert/private.cert -days 9999 -nodes -subj /CN=127.0.0.1
+```
+
+This will create `.cert/private.key` and `.cert/private.cert` for local HTTPS.
 
 ### Installation
 
@@ -63,6 +74,9 @@ scripts/
     build.mjs
     plugins/
       serve-mode-plugin.mjs
+.cert/
+  private.key
+  private.cert
 ```
 
 ---
@@ -78,6 +92,17 @@ JavaScript/CSS のビルド・バンドル・サーブを簡単に行えます�
 
 - Node.js（推奨: v18以上）
 - npm または yarn
+- **OpenSSL**（ローカル開発用証明書の作成に必要）
+
+### 初期セットアップ
+
+開発を始める前に、ローカルHTTPSサーバー用の自己署名証明書を作成してください：
+
+```sh
+openssl req -x509 -newkey rsa:4096 -keyout .cert/private.key -out .cert/private.cert -days 9999 -nodes -subj /CN=127.0.0.1
+```
+
+これにより `.cert/private.key` と `.cert/private.cert` が作成されます。
 
 ### インストール
 
@@ -130,4 +155,7 @@ scripts/
     build.mjs
     plugins/
       serve-mode-plugin.mjs
+.cert/
+  private.key
+  private.cert
 ```
