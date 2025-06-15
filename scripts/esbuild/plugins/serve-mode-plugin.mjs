@@ -1,5 +1,5 @@
 export default {
-  name: "watch-mode-plugin",
+  name: "serve-mode-plugin",
   setup(build) {
     let startTime = "";
     build.onStart(() => {
@@ -14,7 +14,6 @@ export default {
         `${endTime.toLocaleString()} Build finished in ${duration} seconds`
       );
       startTime = "";
-      console.log("Watch mode is enabled, waiting for changes...");
     });
   }
 };
