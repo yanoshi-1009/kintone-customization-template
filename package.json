@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:prod": "webpack --mode=production",
-    "build:dev": "webpack --mode=development --devtool=eval-source-map --watch"
+    "build:prod": "node ./scripts/esbuild/build.mjs --mode=production",
+    "build:dev": "node ./scripts/esbuild/build.mjs --mode=development"
   },
   "keywords": [
     "kintone"
@@ -20,27 +20,16 @@
   },
   "description": "This is my kintone customization template.",
   "devDependencies": {
-    "@babel/cli": "^7.27.2",
-    "@babel/core": "^7.27.4",
-    "@babel/plugin-transform-runtime": "^7.27.4",
-    "@babel/preset-env": "^7.27.2",
     "@cybozu/eslint-config": "^24.0.0",
-    "babel-loader": "^10.0.0",
-    "babel-plugin-polyfill-corejs3": "^0.12.0",
-    "css-loader": "^7.1.2",
+    "esbuild": "^0.25.5",
+    "esbuild-sass-plugin": "^3.3.1",
     "eslint": "^9.29.0",
     "prettier": "^3.5.3",
-    "sass": "^1.89.2",
-    "sass-loader": "^16.0.5",
-    "style-loader": "^4.0.0",
-    "webpack": "^5.99.9",
-    "webpack-cli": "^6.0.1"
+    "sass-embedded": "^1.89.2"
   },
   "dependencies": {
-    "@babel/runtime": "^7.27.6",
     "@kintone/rest-api-client": "^5.7.4",
     "axios": "^1.10.0",
-    "core-js-pure": "^3.43.0",
     "dayjs": "^1.11.13",
     "kintone-ui-component": "^1.21.0",
     "sweetalert2": "^11.22.0"
