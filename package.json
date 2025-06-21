@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:prod": "node ./scripts/esbuild/build.mjs --mode=production",
-    "build:dev": "node ./scripts/esbuild/build.mjs --mode=development"
+    "build:prod": "tsc --noEmit && node ./scripts/esbuild/build.mjs --mode=production",
+    "build:dev": "tsc --noEmit && node ./scripts/esbuild/build.mjs --mode=development"
   },
   "keywords": [
     "kintone"
@@ -21,9 +21,11 @@
   "description": "This is my kintone customization template.",
   "devDependencies": {
     "@cybozu/eslint-config": "^24.0.0",
+    "@kintone/dts-gen": "^8.1.2",
     "esbuild": "^0.25.5",
     "eslint": "^9.29.0",
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "sass-embedded": "^1.89.2"
   },
   "dependencies": {
     "@kintone/rest-api-client": "^5.7.4",
