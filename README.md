@@ -67,9 +67,9 @@ node scripts/esbuild/build.mjs --mode=production
 ```text
 src/
   js/
-    index.js
+    index.ts
   scss/
-    style.scss
+    style.css
 dist/
 scripts/
   esbuild/
@@ -150,9 +150,9 @@ node scripts/esbuild/build.mjs --mode=production
 ```text
 src/
   js/
-    index.js
+    index.ts
   scss/
-    style.scss
+    style.css
 dist/
 scripts/
   esbuild/
