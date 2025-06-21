@@ -1,6 +1,5 @@
 import * as esbuild from "esbuild";
 import { parseArgs } from "node:util";
-import { sassPlugin } from "esbuild-sass-plugin";
 import serveModePlugin from "./plugins/serve-mode-plugin.mjs";
 
 const {
@@ -29,7 +28,7 @@ const context = await esbuild.context({
   minify: mode === "production",
   legalComments: mode === "production" ? "eof" : "none",
   outdir: "dist",
-  plugins: [sassPlugin({ embedded: true }), serveModePlugin]
+  plugins: [serveModePlugin]
 });
 
 const runServeMode = async () => {
