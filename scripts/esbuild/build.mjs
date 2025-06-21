@@ -22,7 +22,7 @@ if (!["production", "development"].includes(mode)) {
 }
 
 const context = await esbuild.context({
-  entryPoints: ["src/js/index.js"],
+  entryPoints: ["src/js/index.js", "src/style/style.css"],
   bundle: true,
   sourcemap: mode === "production" ? false : "inline",
   minify: mode === "production",
