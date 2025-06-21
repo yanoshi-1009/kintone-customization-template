@@ -18,5 +18,5 @@
     "./node_modules/@kintone/dts-gen/kintone.d.ts",
     "src/js/fields.d.ts"
   ],
-  "include": ["src/js/*.ts"]
+  "include": ["./src/js/**/*.ts"]
 }

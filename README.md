@@ -64,7 +64,7 @@ node scripts/esbuild/build.mjs --mode=production
 
 ### Directory Structure
 
-```
+```text
 src/
   js/
     index.js
@@ -147,7 +147,7 @@ node scripts/esbuild/build.mjs --mode=production
 
 ### ディレクトリ構成
 
-```
+```text
 src/
   js/
     index.js
