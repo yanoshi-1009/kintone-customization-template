@@ -20,7 +20,7 @@
   },
   "description": "This is my kintone customization template.",
   "devDependencies": {
-    "@cybozu/eslint-config": "^24.2.0",
+    "@cybozu/eslint-config": "^24.3.0",
     "@kintone/dts-gen": "^8.1.2",
     "esbuild": "^0.25.9",
     "eslint": "^9.34.0",
