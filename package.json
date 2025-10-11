@@ -32,6 +32,6 @@
     "axios": "^1.12.2",
     "dayjs": "^1.11.18",
     "kintone-ui-component": "^1.22.0",
-    "sweetalert2": "^11.25.0"
+    "sweetalert2": "^11.26.1"
   }
 }
