@@ -28,7 +28,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "^5.7.5",
+    "@kintone/rest-api-client": "^6.0.0",
     "axios": "^1.12.2",
     "dayjs": "^1.11.18",
     "kintone-ui-component": "^1.22.0",
