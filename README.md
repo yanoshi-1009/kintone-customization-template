@@ -10,7 +10,7 @@ You can easily build, bundle, and serve your JavaScript/CSS for kintone customiz
 ### Prerequisites
 
 - Node.js (v18 or later recommended)
-- npm or yarn
+- pnpm (v10 or later recommended)
 - **OpenSSL** (for generating a local development certificate)
 
 ### Initial Setup
@@ -26,9 +26,9 @@ This will create `.cert/private.key` and `.cert/private.cert` for local HTTPS.
 ### Installation
 
 ```sh
-npm install
+pnpm install
 
-npx kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <password> --app-id <appId> --type-name <appName> -o "./src/js/fields.d.ts"
+pnpm dlx kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <password> --app-id <appId> --type-name <appName> -o "./src/js/fields.d.ts"
 ```
 
 ### Usage
@@ -36,7 +36,7 @@ npx kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <password
 #### Development Mode (with local server & watch)
 
 ```sh
-npm run build:dev
+pnpm build:dev
 ```
 
 or
@@ -51,7 +51,7 @@ node scripts/esbuild/build.mjs --mode=development
 #### Production Build
 
 ```sh
-npm run build:prod
+pnpm build:prod
 ```
 
 or
@@ -93,7 +93,7 @@ JavaScript/CSS のビルド・バンドル・サーブを簡単に行えます�
 ### 前提条件
 
 - Node.js（推奨: v18以上）
-- npm または yarn
+- pnpm（推奨: v10以上）
 - **OpenSSL**（ローカル開発用証明書の作成に必要）
 
 ### 初期セットアップ
@@ -109,9 +109,9 @@ mkdir .cert && openssl req -x509 -newkey rsa:4096 -keyout .cert/private.key -out
 ### インストール
 
 ```sh
-npm install
+pnpm install
 
-npx kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <password> --app-id <appId> --type-name <appName> -o "./src/js/fields.d.ts"
+pnpm dlx kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <password> --app-id <appId> --type-name <appName> -o "./src/js/fields.d.ts"
 ```
 
 ### 使い方
@@ -119,7 +119,7 @@ npx kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <password
 #### 開発モード（ローカルサーバー＆ウォッチ付き）
 
 ```sh
-npm build:dev
+pnpm build:dev
 ```
 
 または
@@ -134,7 +134,7 @@ node scripts/esbuild/build.mjs --mode=development
 #### 本番ビルド
 
 ```sh
-npm build:prod
+pnpm build:prod
 ```
 
 または
