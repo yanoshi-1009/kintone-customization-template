@@ -16,7 +16,8 @@
   "author": "y.idakko@gmail.com",
   "license": "MIT",
   "engines": {
-    "node": "18.x || 20.x || 22.x || 24.x"
+    "node": "20.x || 22.x || 24.x",
+    "pnpm": "10.x"
   },
   "description": "This is my kintone customization template.",
   "devDependencies": {
