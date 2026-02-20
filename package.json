@@ -29,7 +29,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "^6.1.1",
+    "@kintone/rest-api-client": "^6.1.2",
     "axios": "^1.13.5",
     "dayjs": "^1.11.19",
     "kintone-ui-component": "^1.24.0",
