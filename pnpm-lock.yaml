@@ -21,8 +21,8 @@ importers:
         specifier: ^1.24.0
         version: 1.24.0
       sweetalert2:
-        specifier: ^11.26.18
-        version: 11.26.18
+        specifier: ^11.26.20
+        version: 11.26.20
     devDependencies:
       '@cybozu/eslint-config':
         specifier: ^25.0.0
@@ -1603,8 +1603,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  sweetalert2@11.26.18:
-    resolution: {integrity: sha512-3O5feBqV+hTIOwCRKGuZGHosjiuBAKP/vpBl6vKFZeVYfCUGdXqXuuidn6YXHan3f6e62UdmnjwJBt8UtDVBhg==}
+  sweetalert2@11.26.20:
+    resolution: {integrity: sha512-mG3guPRzmpqGufTQ05Kr7WQIe1xfBEB9JwPIJbR2plL0ezVzS3qmazuzse0J8+/YYGCGrAL4Us2Sm5VCgHyuRg==}
 
   synckit@0.11.11:
     resolution: {integrity: sha512-MeQTA1r0litLUf0Rp/iisCaL8761lKAZHaimlbGK4j0HysC4PLfqygQj9srcs0m2RdtDYnF8UuYyKpbjHYp7Jw==}
@@ -3515,7 +3515,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  sweetalert2@11.26.18: {}
+  sweetalert2@11.26.20: {}
 
   synckit@0.11.11:
     dependencies:
