@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "init": "node ./scripts/init.mjs",
     "build:prod": "tsc --noEmit && node ./scripts/esbuild/build.mjs --mode=production",
     "build:dev": "tsc --noEmit && node ./scripts/esbuild/build.mjs --mode=development"
   },

@@ -1,7 +1,7 @@
 export default {
   name: "serve-mode-plugin",
   setup(build) {
-    let startTime;
+    let startTime = null;
     build.onStart(() => {
       startTime = new Date();
       console.log("------");
