@@ -2,7 +2,8 @@
   "extends": [
     "config:recommended",
     ":automergeMinor",
-    ":maintainLockFilesWeekly"
+    ":maintainLockFilesWeekly",
+    ":skipStatusChecks"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": "before 6am",
@@ -17,6 +18,10 @@
     {
       "matchPackageNames": ["@cybozu/eslint-config"],
       "automerge": true
+    },
+    {
+      "matchPackageNames": ["node", "pnpm"],
+      "enabled": false
     }
   ]
 }
