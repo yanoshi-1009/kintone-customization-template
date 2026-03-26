@@ -1,9 +1,9 @@
 import * as esbuild from "esbuild";
 import { parseArgs } from "node:util";
-import serveModePlugin from "./plugins/serve-mode-plugin.mjs";
+import serveModePlugin from "./plugins/serve-mode-plugin.ts";
 
 const {
-  values: { mode }
+  values: { mode = "development" }
 } = parseArgs({
   options: {
     mode: {
@@ -24,11 +24,11 @@ if (!["production", "development"].includes(mode)) {
 const context = await esbuild.context({
   entryPoints: ["src/js/index.ts", "src/style/style.css"],
   bundle: true,
-  sourcemap: mode === "production" ? false : "inline",
+  plugins: [serveModePlugin],
   minify: mode === "production",
+  sourcemap: mode === "production" ? false : "inline",
   legalComments: mode === "production" ? "eof" : "none",
   outdir: "dist",
-  plugins: [serveModePlugin]
 });
 
 const runServeMode = async () => {
@@ -70,4 +70,5 @@ switch (mode) {
   case "production":
     await runProductionBuild();
     process.exit(0);
+    break;
 }

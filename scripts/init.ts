@@ -1,19 +1,23 @@
 import { execSync } from "node:child_process";
-import { existsSync, unlinkSync } from "node:fs";
+import { existsSync, mkdirSync, unlinkSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 try {
-  execSync("mkdir -p .cert", { stdio: "inherit" });
+  mkdirSync(".cert", { recursive: true });
   execSync(
     "mkcert -key-file .cert/private.key -cert-file .cert/private.cert localhost 127.0.0.1",
     { stdio: "inherit" }
   );
   execSync("pnpm install", { stdio: "inherit" });
-} catch (error) {
-  process.exit(error.status || 1);
+} catch (error: unknown) {
+  const status =
+    typeof error === "object" && error !== null && "status" in error
+      ? Number(error.status)
+      : 1;
+  process.exit(status || 1);
 }
 
 const targets = [
