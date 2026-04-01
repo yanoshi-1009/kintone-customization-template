@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@kintone/rest-api-client':
-        specifier: 6.1.3
-        version: 6.1.3
+        specifier: 6.1.4
+        version: 6.1.4
       dayjs:
         specifier: 1.11.20
         version: 1.11.20
@@ -387,8 +387,8 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@kintone/rest-api-client@6.1.3':
-    resolution: {integrity: sha512-CqMba2cFPPQ8hh82ZaM9gm43j55U9KIiNVe8vsrslAqyvGVLt4eirpq2nIA7oKmFqAELvUY5mwZ+JkAvXm0ouQ==}
+  '@kintone/rest-api-client@6.1.4':
+    resolution: {integrity: sha512-L3E7zcJW4EWnBWHJqo9xr4S6NrxNJsAvjiTr1zWzT+6wfiHe14sTIfW4kO46XGPigu81pLUcKGyKydG9/tQZZg==}
     engines: {node: '>=20'}
 
   '@lit-labs/ssr-dom-shim@1.5.1':
@@ -2098,7 +2098,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@kintone/rest-api-client@6.1.3':
+  '@kintone/rest-api-client@6.1.4':
     dependencies:
       axios: 1.14.0
       core-js: 3.49.0
