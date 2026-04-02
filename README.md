@@ -15,7 +15,7 @@ You can easily build, bundle, and serve your JavaScript/CSS for kintone customiz
 - [Prettier](https://prettier.io/) — code formatting
 - [@kintone/rest-api-client](https://github.com/kintone/js-sdk/tree/main/packages/rest-api-client) — kintone REST API client
 - [kintone-ui-component](https://kintone-ui-component.netlify.app/) — kintone UI components
-- [axios](https://axios-http.com/), [dayjs](https://day.js.org/), [sweetalert2](https://sweetalert2.github.io/) — utility libraries
+- [dayjs](https://day.js.org/) — date utility library
 
 ### Prerequisites
 
@@ -122,7 +122,7 @@ JavaScript/CSS のビルド・バンドル・サーブを簡単に行えます�
 - [Prettier](https://prettier.io/) — コードフォーマット
 - [@kintone/rest-api-client](https://github.com/kintone/js-sdk/tree/main/packages/rest-api-client) — kintone REST API クライアント
 - [kintone-ui-component](https://kintone-ui-component.netlify.app/) — kintone UI コンポーネント
-- [axios](https://axios-http.com/)、[dayjs](https://day.js.org/)、[sweetalert2](https://sweetalert2.github.io/) — ユーティリティライブラリ
+- [dayjs](https://day.js.org/) — 日付ユーティリティライブラリ
 
 ### 前提条件
 
