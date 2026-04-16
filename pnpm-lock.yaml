@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@kintone/rest-api-client':
-        specifier: 6.1.5
-        version: 6.1.5
+        specifier: 6.1.6
+        version: 6.1.6
       dayjs:
         specifier: 1.11.20
         version: 1.11.20
@@ -387,8 +387,8 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@kintone/rest-api-client@6.1.5':
-    resolution: {integrity: sha512-4mKrVry5w/yBE1GWRixbkTN1MnnmYkUtu7oWz6Pnb5vqIp/jci47wwilgKC8kec/MhQokwGlBzroEEL3a6wFkg==}
+  '@kintone/rest-api-client@6.1.6':
+    resolution: {integrity: sha512-9+js5MovmHHEZMXamK3W7krvWTI0CyASr3sOLg4l92fVvTYZ67DYeXrmv2WkW8p40AfuX90nzAEVxxdg/3zc2w==}
     engines: {node: '>=20'}
 
   '@lit-labs/ssr-dom-shim@1.5.1':
@@ -659,9 +659,6 @@ packages:
   axe-core@4.11.2:
     resolution: {integrity: sha512-byD6KPdvo72y/wj2T/4zGEvvlis+PsZsn/yPS3pEO+sFpcrqRpX/TJCxvVaEsNeMrfQbCr7w163YqoD9IYwHXw==}
     engines: {node: '>=4'}
-
-  axios@1.14.0:
-    resolution: {integrity: sha512-3Y8yrqLSwjuzpXuZ0oIYZ/XGgLwUIBU3uLvbcpb0pidD9ctpShJd43KSlEEkVQg6DS0G9NKyzOvBfUtDKEyHvQ==}
 
   axios@1.15.0:
     resolution: {integrity: sha512-wWyJDlAatxk30ZJer+GeCWS209sA42X+N5jU2jy6oHTp7ufw8uzUTVFBX9+wTfAlhiJXGS0Bq7X6efruWjuK9Q==}
@@ -1483,8 +1480,8 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  qs@6.15.0:
-    resolution: {integrity: sha512-mAZTtNCeetKMH+pSjrb76NAM8V9a05I9aBZOHztWy/UqcJdQYNsf59vrRKWnojAT9Y+GbIvoTBC++CPHqpDBhQ==}
+  qs@6.15.1:
+    resolution: {integrity: sha512-6YHEFRL9mfgcAvql/XhwTvf5jKcOiiupt2FiJxHkiX1z4j7WL8J/jRHYLluORvc1XxB5rV20KoeK00gVJamspg==}
     engines: {node: '>=0.6'}
 
   react-is@16.13.1:
@@ -2106,13 +2103,13 @@ snapshots:
       - supports-color
       - typescript
 
-  '@kintone/rest-api-client@6.1.5':
+  '@kintone/rest-api-client@6.1.6':
     dependencies:
-      axios: 1.14.0
+      axios: 1.15.0
       form-data: 4.0.5
       js-base64: 3.7.8
       mime: 3.0.0
-      qs: 6.15.0
+      qs: 6.15.1
     transitivePeerDependencies:
       - debug
 
@@ -2397,14 +2394,6 @@ snapshots:
       possible-typed-array-names: 1.1.0
 
   axe-core@4.11.2: {}
-
-  axios@1.14.0:
-    dependencies:
-      follow-redirects: 1.15.11
-      form-data: 4.0.5
-      proxy-from-env: 2.1.0
-    transitivePeerDependencies:
-      - debug
 
   axios@1.15.0:
     dependencies:
@@ -3366,7 +3355,7 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  qs@6.15.0:
+  qs@6.15.1:
     dependencies:
       side-channel: 1.1.0
 
