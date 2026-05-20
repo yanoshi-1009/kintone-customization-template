@@ -31,14 +31,14 @@
     "build:dev": "tsc --noEmit && node ./scripts/esbuild/build.ts --mode=development"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "6.1.6",
+    "@kintone/rest-api-client": "6.1.7",
     "dayjs": "1.11.20",
-    "kintone-ui-component": "1.24.0"
+    "kintone-ui-component": "1.25.0"
   },
   "devDependencies": {
     "@cybozu/eslint-config": "25.0.1",
-    "@kintone/dts-gen": "9.0.5",
-    "@types/node": "24.12.2",
+    "@kintone/dts-gen": "9.0.6",
+    "@types/node": "24.12.4",
     "esbuild": "0.28.0",
     "eslint": "9.39.4",
     "prettier": "3.8.3",
