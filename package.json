@@ -31,7 +31,7 @@
     "build:dev": "tsc --noEmit && node ./scripts/esbuild/build.ts --mode=development"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "6.1.7",
+    "@kintone/rest-api-client": "6.2.0",
     "dayjs": "1.11.20",
     "kintone-ui-component": "1.25.0"
   },
