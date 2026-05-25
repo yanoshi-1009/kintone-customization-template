@@ -18,17 +18,17 @@ if (!["production", "development"].includes(mode)) {
   console.error(
     "\x1b[31mError: Please specify the mode as 'production' or 'development'.\x1b[0m"
   );
-  process.exit(1);
+  throw new Error("Invalid mode specified. Use 'production' or 'development'.");
 }
 
 const context = await esbuild.context({
-  entryPoints: ["src/js/index.ts", "src/style/style.css"],
+  entryPoints: ["src/index.ts", "src/styles/style.css"],
   bundle: true,
   plugins: [serveModePlugin],
   minify: mode === "production",
   sourcemap: mode === "production" ? false : "inline",
   legalComments: mode === "production" ? "eof" : "none",
-  outdir: "dist",
+  outdir: "dist"
 });
 
 const runServeMode = async () => {
@@ -49,7 +49,7 @@ const runServeMode = async () => {
     console.log("\x1b[36m========================================\x1b[0m");
   } catch (error) {
     console.error("\x1b[31mError during watch mode:\x1b[0m", error);
-    process.exit(1);
+    throw error;
   }
 };
 
@@ -59,7 +59,7 @@ const runProductionBuild = async () => {
     console.log("\x1b[32mProduction build completed successfully.\x1b[0m");
   } catch (error) {
     console.error("\x1b[31mError during production build:\x1b[0m", error);
-    process.exit(1);
+    throw error;
   }
 };
 
@@ -69,6 +69,5 @@ switch (mode) {
     break;
   case "production":
     await runProductionBuild();
-    process.exit(0);
-    break;
+    throw new Error("Production build completed. Exiting.");
 }
