@@ -13,11 +13,8 @@ try {
   );
   execSync("pnpm install", { stdio: "inherit" });
 } catch (error: unknown) {
-  const status =
-    typeof error === "object" && error !== null && "status" in error
-      ? Number(error.status)
-      : 1;
-  process.exit(status || 1);
+  console.error("\x1b[31mError during initialization:\x1b[0m", error);
+  throw error;
 }
 
 const targets = [
