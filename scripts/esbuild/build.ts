@@ -22,7 +22,12 @@ if (!["production", "development"].includes(mode)) {
 }
 
 const context = await esbuild.context({
-  entryPoints: ["src/index.ts", "src/styles/style.css"],
+  entryPoints: [
+    "src/index.ts",
+    "src/mobile.ts",
+    "src/styles/style.css",
+    "src/styles/mobile.css"
+  ],
   bundle: true,
   plugins: [serveModePlugin],
   minify: mode === "production",
