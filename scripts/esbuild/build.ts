@@ -74,5 +74,4 @@ switch (mode) {
     break;
   case "production":
     await runProductionBuild();
-    throw new Error("Production build completed. Exiting.");
 }
