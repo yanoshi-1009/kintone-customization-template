@@ -35,16 +35,15 @@
   },
   "dependencies": {
     "@kintone/rest-api-client": "6.2.1",
-    "dayjs": "1.11.21",
     "kintone-ui-component": "1.25.0"
   },
   "devDependencies": {
-    "@cybozu/eslint-config": "25.0.1",
+    "@cybozu/eslint-config": "26.0.0",
     "@kintone/dts-gen": "9.0.8",
     "@types/node": "24.13.3",
     "esbuild": "0.28.1",
-    "eslint": "9.39.5",
+    "eslint": "10.7.0",
     "prettier": "3.9.6",
-    "typescript": "7.0.2"
+    "typescript": "6.0.3"
   }
 }

@@ -1,4 +1,4 @@
-import cybozuEslintConfig from "@cybozu/eslint-config/flat/presets/node-typescript-prettier.js";
+import cybozuEslintConfig from "@cybozu/eslint-config/presets/node-typescript-prettier";
 
 export default [
   ...cybozuEslintConfig,

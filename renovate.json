@@ -16,7 +16,7 @@
   },
   "packageRules": [
     {
-      "matchPackageNames": ["@cybozu/eslint-config", "typescript"],
+      "matchPackageNames": ["@cybozu/eslint-config"],
       "automerge": true
     },
     {
