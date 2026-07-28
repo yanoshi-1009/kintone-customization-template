@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@kintone/rest-api-client": "6.2.1",
-    "dayjs": "^1.11.21",
+    "dayjs": "1.11.21",
     "kintone-ui-component": "1.25.0"
   },
   "devDependencies": {
@@ -44,7 +44,7 @@
     "@types/node": "26.1.1",
     "@typescript/native": "npm:typescript@7.0.2",
     "esbuild": "0.28.1",
-    "eslint": "10.7.0",
+    "eslint": "10.8.0",
     "prettier": "3.9.6",
     "typescript": "npm:@typescript/typescript6@6.0.2"
   }
