@@ -210,6 +210,9 @@ importers:
       '@kintone/rest-api-client':
         specifier: 6.2.1
         version: 6.2.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+      chart.js:
+        specifier: ^4.5.1
+        version: 4.5.1
       dayjs:
         specifier: 1.11.21
         version: 1.11.21
@@ -633,6 +636,9 @@ packages:
   '@kintone/rest-api-client@6.2.1':
     resolution: {integrity: sha512-sPFz+0wy/pGmxbORPT/WLtwHvmwwtu7M/f/0Oqi7S+omwb46SGyx16TuSLdrTX1cJEr6YnHjQrI/tNsBlDWzmw==}
     engines: {node: '>=20'}
+
+  '@kurkle/color@0.3.4':
+    resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
 
   '@lit-labs/ssr-dom-shim@1.6.0':
     resolution: {integrity: sha512-VHb0ALPMTlgKjM6yIxxoQNnpKyUKLD04VzeQdsiXkMqkvYlAHxq9glGLmgbb889/1GsohSOAjvQYoiBppXFqrQ==}
@@ -1110,6 +1116,10 @@ packages:
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
+
+  chart.js@4.5.1:
+    resolution: {integrity: sha512-GIjfiT9dbmHRiYi6Nl2yFCq7kkwdkp1W/lp2J99rX0yo9tgJGn3lKQATztIjb5tVtevcBtIdICNWqlq5+E8/Pw==}
+    engines: {pnpm: '>=8'}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -2618,6 +2628,8 @@ snapshots:
       - debug
       - supports-color
 
+  '@kurkle/color@0.3.4': {}
+
   '@lit-labs/ssr-dom-shim@1.6.0': {}
 
   '@lit/reactive-element@2.1.2':
@@ -3102,6 +3114,10 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+
+  chart.js@4.5.1:
+    dependencies:
+      '@kurkle/color': 0.3.4
 
   color-convert@2.0.1:
     dependencies:

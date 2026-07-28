@@ -12,7 +12,7 @@
     "url": "https://github.com/yanoshi-1009/kintone-customization-template"
   },
   "type": "module",
-  "main": "index.js",
+  "main": "index.ts",
   "engines": {
     "node": ">=26.0.0"
   },
@@ -30,11 +30,15 @@
   },
   "scripts": {
     "init": "node ./scripts/init.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
     "build:prod": "tsc --noEmit && node ./scripts/esbuild/build.ts --mode=production",
     "build:dev": "tsc --noEmit && node ./scripts/esbuild/build.ts --mode=development"
   },
   "dependencies": {
     "@kintone/rest-api-client": "6.2.1",
+    "chart.js": "4.5.1",
     "dayjs": "1.11.21",
     "kintone-ui-component": "1.25.0"
   },
