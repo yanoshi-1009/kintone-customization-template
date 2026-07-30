@@ -33,8 +33,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "build:prod": "tsc --noEmit && node ./scripts/esbuild/build.ts --mode=production",
-    "build:dev": "tsc --noEmit && node ./scripts/esbuild/build.ts --mode=development"
+    "typecheck": "tsc --noEmit && tsc -p scripts --noEmit",
+    "build:prod": "pnpm run typecheck && node ./scripts/esbuild/build.ts --mode=production",
+    "build:dev": "pnpm run typecheck && node ./scripts/esbuild/build.ts --mode=development"
   },
   "dependencies": {
     "@kintone/rest-api-client": "6.2.1",
