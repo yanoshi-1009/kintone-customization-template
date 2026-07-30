@@ -211,11 +211,14 @@ importers:
         specifier: 6.2.1
         version: 6.2.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       chart.js:
-        specifier: ^4.5.1
+        specifier: 4.5.1
         version: 4.5.1
       dayjs:
         specifier: 1.11.21
         version: 1.11.21
+      i18next:
+        specifier: 26.3.6
+        version: 26.3.6(@typescript/typescript6@6.0.2)
       kintone-ui-component:
         specifier: 1.25.0
         version: 1.25.0
@@ -1585,6 +1588,14 @@ packages:
   https-proxy-agent@5.0.1:
     resolution: {integrity: sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==}
     engines: {node: '>= 6'}
+
+  i18next@26.3.6:
+    resolution: {integrity: sha512-Bu5Z2nAXgfVyM8xvW3jk9EKRIuX37PudsrBViThNFx7CR7aaYTpP01cxNB/E4c4UUzTDiAZRstEhsRfPOL/8xA==}
+    peerDependencies:
+      typescript: ^5 || ^6 || ^7
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -3805,6 +3816,10 @@ snapshots:
       debug: 4.4.3(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
+
+  i18next@26.3.6(@typescript/typescript6@6.0.2):
+    optionalDependencies:
+      typescript: '@typescript/typescript6@6.0.2'
 
   ignore@5.3.2: {}
 
