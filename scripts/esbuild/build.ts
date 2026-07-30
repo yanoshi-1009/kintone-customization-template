@@ -20,6 +20,7 @@ const createBuildOptions = (mode: Mode): esbuild.BuildOptions => ({
     "src/styles/mobile.css"
   ],
   bundle: true,
+  target: "es2025",
   plugins: [buildLogPlugin],
   minify: mode === "production",
   sourcemap: mode === "production" ? false : "inline",
