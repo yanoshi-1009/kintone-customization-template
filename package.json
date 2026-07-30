@@ -33,13 +33,15 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "build:prod": "tsc --noEmit && node ./scripts/esbuild/build.ts --mode=production",
-    "build:dev": "tsc --noEmit && node ./scripts/esbuild/build.ts --mode=development"
+    "typecheck": "tsc --noEmit && tsc -p scripts --noEmit",
+    "build:prod": "pnpm run typecheck && node ./scripts/esbuild/build.ts --mode=production",
+    "build:dev": "pnpm run typecheck && node ./scripts/esbuild/build.ts --mode=development"
   },
   "dependencies": {
     "@kintone/rest-api-client": "6.2.1",
     "chart.js": "4.5.1",
     "dayjs": "1.11.21",
+    "i18next": "26.3.6",
     "kintone-ui-component": "1.25.0"
   },
   "devDependencies": {
