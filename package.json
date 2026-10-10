@@ -37,7 +37,7 @@
     "build:dev": "pnpm run typecheck && node ./scripts/esbuild/build.ts --mode=development"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "6.2.1",
+    "@kintone/rest-api-client": "6.3.0",
     "chart.js": "4.5.1",
     "dayjs": "1.11.23",
     "i18next": "26.4.2",
