@@ -40,7 +40,7 @@
     "@kintone/rest-api-client": "6.5.0",
     "chart.js": "4.5.1",
     "dayjs": "1.11.23",
-    "i18next": "26.5.5",
+    "i18next": "26.5.6",
     "kintone-ui-component": "1.26.0"
   },
   "devDependencies": {
