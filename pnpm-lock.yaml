@@ -167,8 +167,8 @@ importers:
   .:
     dependencies:
       '@kintone/rest-api-client':
-        specifier: 6.6.0
-        version: 6.6.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+        specifier: 6.6.1
+        version: 6.6.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       chart.js:
         specifier: 4.6.1
         version: 4.6.1
@@ -609,8 +609,8 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@kintone/rest-api-client@6.6.0':
-    resolution: {integrity: sha512-0pa2wo/zOGPbCIMru5dsszXgCqFxSrfejouioMXUabdl0zHWp+9mdQKlPcSLp3fuDamCQK8pLDKpViYI3n9hcA==}
+  '@kintone/rest-api-client@6.6.1':
+    resolution: {integrity: sha512-iu9VO53Pu+zgY7AM2sUD1MfosIARL5PREpVWqcoVlDt2HjkqvyVZQVEDa/OHp2ol7xpR+dj5C1janD87KhbKuQ==}
     engines: {node: '>=20'}
 
   '@kurkle/color@0.3.4':
@@ -1964,8 +1964,8 @@ packages:
     resolution: {integrity: sha512-+Owyggi9IxT1ePKGafcI87ubSmxol6smwJ+RAHDQlx9+9cPwFWDiKFFCPuWhr9ignlGpZ9vDQLw67N4dcTVFEA==}
     engines: {node: '>=20'}
 
-  qs@6.16.0:
-    resolution: {integrity: sha512-h6fhOIaRrID2CbEY2fqs+7t+UXZo+MLAnU5gRIq85uFtdiUPCdsApMlHhXogKVM4HM2DVbIjGNTTYH2OcmP1vA==}
+  qs@6.16.1:
+    resolution: {integrity: sha512-5Px6J7rfHBAGUhNQ3es4YzcOdBBw0SDcVtThJml4RdnKw4tKs2epA0kPZ+K8X+WiHktT93RHVcQ/3ym5aTCgtg==}
     engines: {node: '>=0.6'}
 
   react-is@16.13.1:
@@ -2656,13 +2656,13 @@ snapshots:
       - supports-color
       - typescript
 
-  '@kintone/rest-api-client@6.6.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@kintone/rest-api-client@6.6.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
       axios: 1.20.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       form-data: 4.0.6
       js-base64: 3.9.4
       mime: 3.0.0
-      qs: 6.16.0
+      qs: 6.16.1
     transitivePeerDependencies:
       - debug
       - supports-color
@@ -4243,7 +4243,7 @@ snapshots:
     dependencies:
       hookified: 2.2.0
 
-  qs@6.16.0:
+  qs@6.16.1:
     dependencies:
       es-define-property: 1.0.1
       side-channel: 1.1.1
