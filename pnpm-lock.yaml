@@ -167,8 +167,8 @@ importers:
   .:
     dependencies:
       '@kintone/rest-api-client':
-        specifier: 6.6.1
-        version: 6.6.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+        specifier: 7.0.0
+        version: 7.0.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       chart.js:
         specifier: 4.6.1
         version: 4.6.1
@@ -609,9 +609,9 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@kintone/rest-api-client@6.6.1':
-    resolution: {integrity: sha512-iu9VO53Pu+zgY7AM2sUD1MfosIARL5PREpVWqcoVlDt2HjkqvyVZQVEDa/OHp2ol7xpR+dj5C1janD87KhbKuQ==}
-    engines: {node: '>=20'}
+  '@kintone/rest-api-client@7.0.0':
+    resolution: {integrity: sha512-D/6rEFmDtRLjsWSecmVvsWHoKlwbVtys4KT004s/u4nPbYlIftJV/wW0xoMYDgVPHC5L7akCAsDJE+5MlEmq7Q==}
+    engines: {node: '>=22'}
 
   '@kurkle/color@0.3.4':
     resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
@@ -2723,7 +2723,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@kintone/rest-api-client@6.6.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@kintone/rest-api-client@7.0.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
       axios: 1.20.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       form-data: 4.0.6
