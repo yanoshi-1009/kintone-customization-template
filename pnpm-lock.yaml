@@ -186,8 +186,8 @@ importers:
         specifier: 26.2.0
         version: 26.2.0(@typescript-eslint/utils@8.72.0(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(prettier@3.10.0)(supports-color@7.2.0)(ts-declaration-location@1.0.7(@typescript/typescript6@6.0.2))
       '@kintone/dts-gen':
-        specifier: 9.0.9
-        version: 9.0.9(@typescript-eslint/utils@8.72.0(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+        specifier: 10.0.0
+        version: 10.0.0(@typescript-eslint/utils@8.72.0(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       '@types/node':
         specifier: 26.6.6
         version: 26.6.6
@@ -604,9 +604,9 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@kintone/dts-gen@9.0.9':
-    resolution: {integrity: sha512-iDlTtDL44q3R1KU2VmQtOaBKvbVo54NHEGCTq8UQLQYQdqas2ppT4bBJECRvK9v4/FlZ8piqxZbQizW5+/RN4g==}
-    engines: {node: '>=20'}
+  '@kintone/dts-gen@10.0.0':
+    resolution: {integrity: sha512-myVbucOO4d3WItdombrnrwW23mmI/ZTvZ1bqaaKndjc8zh4+3T+LLYYcDkqAxXezK3EK9/w6B1cqbV1aOTSlyg==}
+    engines: {node: '>=22'}
     hasBin: true
 
   '@kintone/rest-api-client@6.6.1':
@@ -2705,7 +2705,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@kintone/dts-gen@9.0.9(@typescript-eslint/utils@8.72.0(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@kintone/dts-gen@10.0.0(@typescript-eslint/utils@8.72.0(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
       '@cybozu/eslint-config': 24.3.0(@typescript-eslint/utils@8.72.0(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(eslint@9.39.5(supports-color@7.2.0))(prettier@3.8.5)(supports-color@7.2.0)
       axios: 1.20.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
