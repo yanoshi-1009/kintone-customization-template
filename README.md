@@ -20,24 +20,16 @@ You can easily build, bundle, and serve your JavaScript/CSS for kintone customiz
 
 ### Prerequisites
 
-- Node.js (v26 or later) — the init and build scripts are `.ts` files executed directly by Node, relying on its native TypeScript type stripping (there is no separate transpile step for them)
-- pnpm (v12 or later)
-- [mise](https://mise.jdx.dev/) — recommended for managing Node.js and pnpm versions
+- [pnpm](https://pnpm.io/installation) (v11 or later)
 - [mkcert](https://github.com/FiloSottile/mkcert) — for generating a locally-trusted development certificate
 
-These versions are declared in `engines` / `devEngines` in `package.json`.
-`devEngines` is configured with `onFail: "error"`, so pnpm aborts with an error instead of a warning when the active Node.js or pnpm version does not satisfy the requirement.
+#### Node.js and pnpm versions
 
-#### Managing Node.js and pnpm with mise
+The exact Node.js and pnpm versions are pinned in `devEngines` in `package.json` with `onFail: "download"`.
+pnpm switches itself to the pinned version and downloads the pinned Node.js into `node_modules/.bin`, so you do not need to install Node.js yourself.
+Scripts run through `pnpm` use that Node.js; to run it directly, use `pnpm exec node`.
 
-This project pins Node.js and pnpm versions via [`mise.toml`](./mise.toml):
-After cloning the repository, activate the pinned tools from the project root:
-
-```bash
-mise install   # installs the versions declared in mise.toml
-```
-
-Once mise is active in your shell, `node` and `pnpm` will resolve to the versions declared in `mise.toml` whenever you are inside this project directory.
+The init and build scripts are `.ts` files executed directly by Node, relying on its native TypeScript type stripping (there is no separate transpile step for them).
 
 #### Install mkcert (one-time setup per machine)
 
@@ -66,7 +58,7 @@ This script (`scripts/init.ts`):
 
 - Creates the `.cert` directory and a locally-trusted certificate via `mkcert`
 - Installs dependencies with `pnpm install`
-- Removes the template-only file (`renovate.json`) if present
+- Removes the template-only files (`renovate.json`, `LICENSE`) if present
 
 ### TypeScript Setup (v7 native)
 
@@ -132,7 +124,7 @@ pnpm exec kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <pa
 pnpm build:dev
 ```
 
-- Runs TypeScript type check (`tsc --noEmit`) before building
+- Runs `pnpm typecheck` (type checks both `src/` and `scripts/`) before building
 - Starts a local HTTPS server at [https://localhost:9000](https://localhost:9000)
 - Watches for file changes and rebuilds automatically
 - Outputs bundled files with inline source maps to the `dist` directory
@@ -143,7 +135,7 @@ pnpm build:dev
 pnpm build:prod
 ```
 
-- Runs TypeScript type check (`tsc --noEmit`) before building
+- Runs `pnpm typecheck` (type checks both `src/` and `scripts/`) before building
 - Outputs minified, bundled files to the `dist` directory (no source maps)
 
 #### Lint & Format
@@ -155,7 +147,7 @@ pnpm format      # Format with Prettier
 pnpm typecheck   # Type check both src/ and scripts/
 ```
 
-Paths excluded from formatting are listed in [`.prettierignore`](./.prettierignore).
+Prettier skips the paths in `.gitignore`; additional exclusions are listed in [`.prettierignore`](./.prettierignore).
 
 ### Directory Structure
 
@@ -198,7 +190,6 @@ eslint.config.js        # ESLint configuration (project root)
 prettier.config.ts      # Prettier configuration
 .prettierignore         # Paths excluded from Prettier
 tsconfig.json
-mise.toml               # Node.js / pnpm version pinning for mise
 pnpm-workspace.yaml     # pnpm workspace settings (allowBuilds, etc.)
 ```
 
@@ -230,24 +221,16 @@ JavaScript/CSS のビルド・バンドル・サーブを簡単に行えます�
 
 ### 前提条件
 
-- Node.js（v26 以上）— 初期化スクリプトとビルドスクリプトは `.ts` ファイルを Node が直接実行しており、Node のネイティブ TypeScript 型ストリッピングに依存しています（これらに個別のトランスパイル手順はありません）
-- pnpm（v12 以上）
-- [mise](https://mise.jdx.dev/) — Node.js と pnpm のバージョン管理（推奨）
+- [pnpm](https://pnpm.io/ja/installation)（v11 以上）
 - [mkcert](https://github.com/FiloSottile/mkcert) — ブラウザに信頼されたローカル開発用証明書を生成するために必要
 
-これらのバージョンは `package.json` の `engines` / `devEngines` で宣言しています。
-`devEngines` は `onFail: "error"` を設定しているため、実行中の Node.js / pnpm のバージョンが要件を満たさない場合、警告ではなくエラーで停止します。
+#### Node.js と pnpm のバージョン
 
-#### mise による Node.js / pnpm のバージョン管理
+Node.js と pnpm の正確なバージョンは、`package.json` の `devEngines` に `onFail: "download"` 付きで固定しています。
+pnpm が自分自身を固定したバージョンに切り替え、固定した Node.js を `node_modules/.bin` にダウンロードするため、Node.js を自分でインストールする必要はありません。
+`pnpm` 経由で実行するスクリプトはこの Node.js を使います。直接実行する場合は `pnpm exec node` を使ってください。
 
-このプロジェクトでは、[`mise.toml`](./mise.toml) で Node.js と pnpm のバージョンを固定しています：
-リポジトリをクローン後、プロジェクトルートで `mise.toml` に書かれたツールをアクティブにします：
-
-```bash
-mise install   # mise.toml に書かれたバージョンをインストール
-```
-
-シェルで mise がアクティブになっていれば、このプロジェクト内では `mise.toml` で固定されたバージョンの `node` と `pnpm` が自動的に使われます。
+初期化スクリプトとビルドスクリプトは `.ts` ファイルを Node が直接実行しており、Node のネイティブ TypeScript 型ストリッピングに依存しています（これらに個別のトランスパイル手順はありません）。
 
 #### mkcert のインストール（マシンごとに 1 回だけ実行）
 
@@ -276,7 +259,7 @@ pnpm run init
 
 - `.cert` ディレクトリと `mkcert` によるローカル信頼済み証明書を作成
 - `pnpm install` で依存パッケージをインストール
-- テンプレート専用ファイル（`renovate.json`）が残っていれば削除
+- テンプレート専用ファイル（`renovate.json`、`LICENSE`）が残っていれば削除
 
 ### TypeScript の構成（v7 native）
 
@@ -342,7 +325,7 @@ pnpm exec kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <pa
 pnpm build:dev
 ```
 
-- ビルド前に TypeScript 型チェック（`tsc --noEmit`）を実行
+- ビルド前に `pnpm typecheck`（`src/` と `scripts/` の両方の型チェック）を実行
 - [https://localhost:9000](https://localhost:9000) でローカル HTTPS サーバーを起動
 - ファイル変更を監視し、自動で再ビルド
 - インラインソースマップ付きで `dist` ディレクトリへ出力
@@ -353,7 +336,7 @@ pnpm build:dev
 pnpm build:prod
 ```
 
-- ビルド前に TypeScript 型チェック（`tsc --noEmit`）を実行
+- ビルド前に `pnpm typecheck`（`src/` と `scripts/` の両方の型チェック）を実行
 - ソースマップなし・minify 済みのファイルを `dist` ディレクトリへ出力
 
 #### リント & フォーマット
@@ -365,7 +348,7 @@ pnpm format      # Prettier によるフォーマット
 pnpm typecheck   # src/ と scripts/ の両方を型チェック
 ```
 
-フォーマット対象から除外するパスは [`.prettierignore`](./.prettierignore) に記載しています。
+Prettier は `.gitignore` に書かれたパスを対象外にします。それ以外に除外するパスは [`.prettierignore`](./.prettierignore) に記載しています。
 
 ### ディレクトリ構成
 
@@ -408,7 +391,6 @@ eslint.config.js        # ESLint 設定（プロジェクトルート）
 prettier.config.ts      # Prettier 設定
 .prettierignore         # Prettier の対象外パス
 tsconfig.json
-mise.toml               # mise による Node.js / pnpm バージョン固定
 pnpm-workspace.yaml     # pnpm ワークスペース設定（allowBuilds 等）
 ```
 
