@@ -169,7 +169,8 @@ src/
   constants/
     config.ts           # App configuration constants
   i18n/
-    index.ts            # i18next init, language resolution, and type augmentation
+    index.ts            # Reads the kintone login user's language, inits i18next, and augments its types
+    languages.ts        # Supported-language registry and language resolution (pure, kintone-free)
     locales/
       en.ts             # Source of truth for translation keys and interpolation types
       ja.ts             # Japanese translations (structurally constrained by en's type)
@@ -378,7 +379,8 @@ src/
   constants/
     config.ts           # アプリ設定定数
   i18n/
-    index.ts            # i18next 初期化・言語判定・型拡張
+    index.ts            # kintone ログインユーザーの言語取得・i18next 初期化・型拡張
+    languages.ts        # 対応言語の登録簿と言語判定（純粋関数・kintone 非依存）
     locales/
       en.ts             # 翻訳キーと補間変数の「正」となるロケール
       ja.ts             # 日本語訳（en の構造に型で拘束される）
