@@ -66,7 +66,7 @@ This script (`scripts/init.ts`):
 
 - Creates the `.cert` directory and a locally-trusted certificate via `mkcert`
 - Installs dependencies with `pnpm install`
-- Removes the template-only file (`renovate.json`) if present
+- Removes the template-only files (`renovate.json`, `LICENSE`) if present
 
 ### TypeScript Setup (v7 native)
 
@@ -276,7 +276,7 @@ pnpm run init
 
 - `.cert` ディレクトリと `mkcert` によるローカル信頼済み証明書を作成
 - `pnpm install` で依存パッケージをインストール
-- テンプレート専用ファイル（`renovate.json`）が残っていれば削除
+- テンプレート専用ファイル（`renovate.json`、`LICENSE`）が残っていれば削除
 
 ### TypeScript の構成（v7 native）
 

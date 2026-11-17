@@ -19,7 +19,9 @@ const installDependencies = () => {
 
 // Template-only files. src/**/.gitkeep must stay: they keep the empty directories tracked.
 const removeTemplateFiles = () => {
-  const targets = [join(rootDir, "renovate.json")];
+  const targets = ["renovate.json", "LICENSE"].map((file) =>
+    join(rootDir, file)
+  );
 
   for (const target of targets) {
     if (!existsSync(target)) {
