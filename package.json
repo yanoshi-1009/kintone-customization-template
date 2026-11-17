@@ -1,16 +1,7 @@
 {
   "name": "kintone-customization",
   "version": "1.0.0",
-  "description": "This is my kintone customization template.",
-  "keywords": [
-    "kintone"
-  ],
-  "author": "y.idakko@gmail.com",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yanoshi-1009/kintone-customization-template"
-  },
+  "private": true,
   "type": "module",
   "engines": {
     "node": ">=26.0.0"
