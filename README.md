@@ -20,7 +20,7 @@ You can easily build, bundle, and serve your JavaScript/CSS for kintone customiz
 
 ### Prerequisites
 
-- [pnpm](https://pnpm.io/installation) (any version)
+- [pnpm](https://pnpm.io/installation) (>= v10.14.0)
 - [mkcert](https://github.com/FiloSottile/mkcert) — for generating a locally-trusted development certificate
 
 #### Node.js and pnpm versions
