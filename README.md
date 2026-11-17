@@ -155,7 +155,7 @@ pnpm format      # Format with Prettier
 pnpm typecheck   # Type check both src/ and scripts/
 ```
 
-Paths excluded from formatting are listed in [`.prettierignore`](./.prettierignore).
+Prettier skips the paths in `.gitignore`; additional exclusions are listed in [`.prettierignore`](./.prettierignore).
 
 ### Directory Structure
 
@@ -365,7 +365,7 @@ pnpm format      # Prettier によるフォーマット
 pnpm typecheck   # src/ と scripts/ の両方を型チェック
 ```
 
-フォーマット対象から除外するパスは [`.prettierignore`](./.prettierignore) に記載しています。
+Prettier は `.gitignore` に書かれたパスを対象外にします。それ以外に除外するパスは [`.prettierignore`](./.prettierignore) に記載しています。
 
 ### ディレクトリ構成
 
