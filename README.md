@@ -21,7 +21,7 @@ You can easily build, bundle, and serve your JavaScript/CSS for kintone customiz
 ### Prerequisites
 
 - Node.js (v26 or later) — the init and build scripts are `.ts` files executed directly by Node, relying on its native TypeScript type stripping (there is no separate transpile step for them)
-- pnpm (v11 or later)
+- pnpm (v12 or later)
 - [mise](https://mise.jdx.dev/) — recommended for managing Node.js and pnpm versions
 - [mkcert](https://github.com/FiloSottile/mkcert) — for generating a locally-trusted development certificate
 
@@ -231,7 +231,7 @@ JavaScript/CSS のビルド・バンドル・サーブを簡単に行えます�
 ### 前提条件
 
 - Node.js（v26 以上）— 初期化スクリプトとビルドスクリプトは `.ts` ファイルを Node が直接実行しており、Node のネイティブ TypeScript 型ストリッピングに依存しています（これらに個別のトランスパイル手順はありません）
-- pnpm（v11 以上）
+- pnpm（v12 以上）
 - [mise](https://mise.jdx.dev/) — Node.js と pnpm のバージョン管理（推奨）
 - [mkcert](https://github.com/FiloSottile/mkcert) — ブラウザに信頼されたローカル開発用証明書を生成するために必要
 
