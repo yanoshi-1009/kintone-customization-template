@@ -37,20 +37,20 @@
     "build:dev": "pnpm run typecheck && node ./scripts/esbuild/build.ts --mode=development"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "6.2.1",
-    "chart.js": "4.5.1",
-    "dayjs": "1.11.21",
-    "i18next": "26.3.6",
+    "@kintone/rest-api-client": "7.0.0",
+    "chart.js": "4.6.1",
+    "dayjs": "1.11.23",
+    "i18next": "27.1.1",
     "kintone-ui-component": "1.26.0"
   },
   "devDependencies": {
-    "@cybozu/eslint-config": "26.0.0",
-    "@kintone/dts-gen": "9.0.8",
-    "@types/node": "26.2.0",
+    "@cybozu/eslint-config": "26.2.0",
+    "@kintone/dts-gen": "10.0.0",
+    "@types/node": "26.6.6",
     "@typescript/native": "npm:typescript@7.0.2",
-    "esbuild": "0.28.1",
-    "eslint": "10.8.0",
-    "prettier": "3.9.6",
+    "esbuild": "0.28.2",
+    "eslint": "10.14.0",
+    "prettier": "3.10.1",
     "typescript": "npm:@typescript/typescript6@6.0.2"
   }
 }
