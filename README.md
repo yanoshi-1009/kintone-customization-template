@@ -132,7 +132,7 @@ pnpm exec kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <pa
 pnpm build:dev
 ```
 
-- Runs TypeScript type check (`tsc --noEmit`) before building
+- Runs `pnpm typecheck` (type checks both `src/` and `scripts/`) before building
 - Starts a local HTTPS server at [https://localhost:9000](https://localhost:9000)
 - Watches for file changes and rebuilds automatically
 - Outputs bundled files with inline source maps to the `dist` directory
@@ -143,7 +143,7 @@ pnpm build:dev
 pnpm build:prod
 ```
 
-- Runs TypeScript type check (`tsc --noEmit`) before building
+- Runs `pnpm typecheck` (type checks both `src/` and `scripts/`) before building
 - Outputs minified, bundled files to the `dist` directory (no source maps)
 
 #### Lint & Format
@@ -342,7 +342,7 @@ pnpm exec kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <pa
 pnpm build:dev
 ```
 
-- ビルド前に TypeScript 型チェック（`tsc --noEmit`）を実行
+- ビルド前に `pnpm typecheck`（`src/` と `scripts/` の両方の型チェック）を実行
 - [https://localhost:9000](https://localhost:9000) でローカル HTTPS サーバーを起動
 - ファイル変更を監視し、自動で再ビルド
 - インラインソースマップ付きで `dist` ディレクトリへ出力
@@ -353,7 +353,7 @@ pnpm build:dev
 pnpm build:prod
 ```
 
-- ビルド前に TypeScript 型チェック（`tsc --noEmit`）を実行
+- ビルド前に `pnpm typecheck`（`src/` と `scripts/` の両方の型チェック）を実行
 - ソースマップなし・minify 済みのファイルを `dist` ディレクトリへ出力
 
 #### リント & フォーマット
